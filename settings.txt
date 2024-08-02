@@ -9,46 +9,134 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
+// Wallpaper parameters
+let rect_width = 20;
 let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
 
-function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+// Star parameters
+let star_count = 1000; // Number of stars
+let star_min_size = 1; // Minimum size of stars
+let star_max_size = 5; // Maximum size of stars
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
-}
+// Saturn parameters
+let saturn_diameter = 300; // Diameter of Saturn
+let saturn_color_start = [255, 204, 0]; // Start color of Saturn
+let saturn_color_end = [255, 165, 0]; // End color of Saturn
+let saturn_gradient_steps = 10; // Number of gradient steps
+
+// Ring parameters
+let ring_count = 8; // Number of rings
+let ring_initial_width = 30; // Initial width of the rings
+let ring_width_increment = 7.5; // Incremental width for each ring
+let ring_radius_increment = 60; // Incremental radius for each ring
+let ring_color_start = 100; // Starting color transparency for rings
+let ring_color_increment = 30; // Incremental color transparency for each ring
+let ring_tilt_angle = 45; // Tilt angle for the rings in degrees
+
+// Asteroid parameters
+let asteroid_count = 40; // Number of asteroids
+let asteroid_min_size = 10; // Minimum size of asteroids
+let asteroid_max_size = 30; // Maximum size of asteroids
+let asteroid_gradient_steps = 5; // Number of gradient steps for asteroids
+
+// Cosmic dust parameters
+let dust_count = 400; // Number of cosmic dust particles
+let dust_min_size = 1; // Minimum size of dust particles
+let dust_max_size = 5; // Maximum size of dust particles
+
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+// Wallpaper parameters
+let rect_width  = 30;
+let rect_height = 30;
+
+// Star parameters
+let star_count = 300;           // Number of stars
+let star_min_size = 2;          // Minimum size of stars
+let star_max_size = 5;          // Maximum size of stars
+
+// Saturn parameters
+let saturn_diameter = 80;       // Diameter of Saturn
+let saturn_color_start = [255, 215, 0]; // Start color of Saturn (gold)
+let saturn_color_end = [255, 140, 0];   // End color of Saturn (dark orange)
+let saturn_gradient_steps = 15; // Number of gradient steps
+
+// Ring parameters
+let ring_count = 5;               // Number of rings
+let ring_initial_width = 8;       // Initial width of the rings
+let ring_width_increment = 2;     // Incremental width for each ring
+let ring_radius_increment = 15;   // Incremental radius for each ring
+let ring_color_start = 120;       // Starting color transparency for rings
+let ring_color_increment = 20;    // Incremental color transparency for each ring
+let ring_tilt_angle = 30;         // Tilt angle for the rings in degrees
+
+// Asteroid parameters
+let asteroid_count = 20;          // Number of asteroids
+let asteroid_min_size = 15;       // Minimum size of asteroids
+let asteroid_max_size = 40;       // Maximum size of asteroids
+let asteroid_gradient_steps = 7; // Number of gradient steps for asteroids
+
+// Cosmic dust parameters
+let dust_count = 200;            // Number of cosmic dust particles
+let dust_min_size = 2;           // Minimum size of dust particles
+let dust_max_size = 6;        
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); // set this to false when you're ready to print
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  // Grid settings
+  pWallpaper.grid_settings.cell_width  = 250;
+  pWallpaper.grid_settings.cell_height = 250;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+wallpaper3
+// Wallpaper parameters
+let rect_width  = 30;
+let rect_height = 30;
+
+// Star parameters
+let star_count = 300;           // Number of stars
+let star_min_size = 2;          // Minimum size of stars
+let star_max_size = 5;          // Maximum size of stars
+
+// Saturn parameters
+let saturn_diameter = 80;       // Diameter of Saturn
+let saturn_color_start = [255, 215, 0]; // Start color of Saturn (gold)
+let saturn_color_end = [255, 140, 0];   // End color of Saturn (dark orange)
+let saturn_gradient_steps = 15; // Number of gradient steps
+
+// Ring parameters
+let ring_count = 5;               // Number of rings
+let ring_initial_width = 8;       // Initial width of the rings
+let ring_width_increment = 2;     // Incremental width for each ring
+let ring_radius_increment = 15;   // Incremental radius for each ring
+let ring_color_start = 120;       // Starting color transparency for rings
+let ring_color_increment = 20;    // Incremental color transparency for each ring
+let ring_tilt_angle = 30;         // Tilt angle for the rings in degrees
+
+// Asteroid parameters
+let asteroid_count = 20;          // Number of asteroids
+let asteroid_min_size = 15;       // Minimum size of asteroids
+let asteroid_max_size = 40;       // Maximum size of asteroids
+let asteroid_gradient_steps = 7; // Number of gradient steps for asteroids
+
+// Cosmic dust parameters
+let dust_count = 200;            // Number of cosmic dust particles
+let dust_min_size = 2;           // Minimum size of dust particles
+let dust_max_size = 6;           // Maximum size of dust particles
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); // set this to false when you're ready to print
+
+  // Grid settings
+  pWallpaper.grid_settings.cell_width  = 250;
+  pWallpaper.grid_settings.cell_height = 250;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
